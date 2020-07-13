@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>First_Assignment</title>
+    <link rel="stylesheet" href="./fontawesome-free-5.11.2-web/css/all.css">
+    <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.css">
+    <style>
+        @media (min-width:576px) {
+            body {
+                background: rgb(3, 32, 70);
+            }
+        }
+
+        @media (min-width:768px) {
+            body {
+                background: rgb(61, 61, 2);
+            }
+        }
+
+        @media (min-width:992px) {
+            body {
+                background: rgb(1, 54, 1);
+            }
+        }
+
+        @media (min-width:1200px) {
+            body {
+                background: rgb(77, 2, 2);
+            }
+        }
+
+        #body {
+            border-top: 3px solid aqua;
+            padding-top: 50px;
+        }
+
+        h3 {
+            font-weight: 900;
+            font-family: cursive;
+            font-size: 40px;
+            letter-spacing: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="p-3 text-light bg-dark">
+        <div class="container">
+            <b>
+                <h1 class="text-info">The Grading System</h1>
+                <!-- <h1 class="text-info">Grading</h1>
+                <h1 class="text-info"> System</h1> -->
+            </b>
+        </div>
+    </header>
+
+
+    <!-- GPA -->
+
+
+    <section id="body">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 my-md-5 text-muted">
+                    <h4 class="mb-3">Steps To Check Your Result</h4>
+                    <ol>
+                        <li>Type your score in the <b>Enter Score</b> spaces provided,</li>
+                        <li>Make sure all the spaces are filled, and filled appropraitely,</li>
+                        <li>Check below boxes with the tags of <b>Course Unit, Grade</b> and <b>Points Obtained</b> to see the values,</li>
+                        <li>Make sure all the boxes are filled even though its a <b>zero,</b></li>
+                        <li>Click on the <b>Check GPA</b> button to see your GPA.</li>
+                    </ol>
+                    <p class="lead mt-5 text-info">For more information about grades for other courses click the button below <span><i
+                                class="fas fa-arrow-down"></i></span></p>
+                    <a class="btn btn-outline-info btn-lg btn-block mb-4" href="./new.html">See More</a>
+
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="d-block d-md-flex">
+                        <div class="col-12 col-md-4 text-center">
+                            <div class="text-primary ">
+                                <h3>CS 101</h3>
+                            </div>
+                            <div class=" d-block">
+                                <div class="mb-3">
+                                    <form action="">
+                                        <div class="form-group">
+                                            <input type="number" id="input1" class="form-control form-control-lg"
+                                                placeholder="Enter Score">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div id="output1" class="mb-3">
+                                    <div class="card bg-primary text-white">
+                                        <div class="card-body">
+                                            <h4>Course Unit</h4>
+                                            <div id="cs1"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="output1.1" class="mb-3">
+                                    <div class="card bg-primary text-white">
+                                        <div class="card-body">
+                                            <h4>Grade</h4>
+                                            <div id="cs1.1"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="output1.2" class="mb-3">
+                                    <div class="card bg-primary text-white">
+                                        <div class="card-body">
+                                            <h4>Points Obtained</h4>
+                                            <div id="cs1.2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-12 col-md-4 text-center">
+                            <div class="text-danger">
+                                <h3>CS 102</h3>
+                            </div>
+                           <div class=" d-block">
+                                <div class="mb-3">
+                                    <form action="">
+                                        <div class="form-group">
+                                            <input type="number" id="input2" class="form-control form-control-lg"
+                                                placeholder="Enter Score">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div id="output2" class="mb-3">
+                                    <div class="card bg-danger text-white">
+                                        <div class="card-body">
+                                            <h4>Course Unit</h4>
+                                            <div id="cs2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="output2.1" class="mb-3">
+                                    <div class="card bg-danger text-white">
+                                        <div class="card-body">
+                                            <h4>Grade</h4>
+                                            <div id="cs2.1"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="output2.2" class="mb-3">
+                                    <div class="card bg-danger text-white">
+                                        <div class="card-body">
+                                            <h4>Points Obtained</h4>
+                                            <div id="cs2.2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-12 col-md-4 text-center">
+                            <div class="text-warning">
+                                <h3>CS 103</h3>
+                            </div>
+                            <div class=" d-block">
+                                <div class="mb-3">
+                                    <form action="">
+                                        <div class="form-group">
+                                            <input type="number" id="input3" class="form-control form-control-lg"
+                                                placeholder="Enter Score">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div id="output3" class="mb-3">
+                                    <div class="card bg-warning text-white">
+                                        <div class="card-body">
+                                            <h4>Course Unit</h4>
+                                            <div id="cs3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="output3.1" class="mb-3">
+                                    <div class="card bg-warning text-white">
+                                        <div class="card-body">
+                                            <h4>Grade</h4>
+                                            <div id="cs3.1"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="output3.2" class="mb-3">
+                                    <div class="card bg-warning text-white">
+                                        <div class="card-body">
+                                            <h4>Points Obtained</h4>
+                                            <div id="cs3.2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col mx-auto text-center text-dark mb-4">
+                        <button class="btn btn-outline-success  mb-3" onclick="total()">Check GPA</button>
+                        <div class="d-sm-flex justify-content-around ">
+                            <div class="card bg-light col-sm-5 card-lg">
+                                <div class="card-body">
+                                    <b>
+                                        <div id="gp">GRADE POINT</div>
+                                    </b>
+                                </div>
+                            </div>
+                            <div class="card bg-light col-sm-5">
+                                <div class="card-body">
+                                    <b>
+                                        <div id="gpout">REMARK</div>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- end of GPA-->
+
+    <!-- footer -->
+    <footer class=" bg-dark text-light text-center p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5 class="lead mr-auto">Copyright &copy; SchoolGradingSystem</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="./index.js"></script>
+    <script src="./bootstrap-4.3.1-dist/js/jquery_3.3.1.js"></script>
+    <script src="./bootstrap-4.3.1-dist/js/popper.min.js"></script>
+    <script src="./bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+</body>
+
+</html>
